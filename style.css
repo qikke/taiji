@@ -1,6 +1,15 @@
 body{
   background:#272822;
 }
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
 #taiji{
   margin-left:auto;
   margin-right: auto;
@@ -12,7 +21,16 @@ body{
   border-radius:100%;
   box-shadow:0px 0px 50px #eee;
   position:relative;
+  animation-name:spin;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
 }
+#taiji:hover{
+  animation-play-state: running;
+}
+
 #taiji::after{
   content:"";
   position:absolute;  
