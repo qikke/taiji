@@ -1,74 +1,36 @@
 body{
   background:#272822;
 }
-.taiji{
+#taiji{
   margin-left:auto;
   margin-right: auto;
   margin-top: 130px;
   width:0;
   height:500px;
-  border-left:250px solid #fff;
+  border-left:250px solid #eee;
   border-right:250px solid #000;
   border-radius:100%;
-  box-shadow:0px 0px 50px #fff;
+  box-shadow:0px 0px 50px #eee;
   position:relative;
 }
-.hei{
+#taiji::after{
+  content:"";
   position:absolute;  
   top:250px;
   left:-125px;
-  width:250px;  
-  height:250px;  
+  width:70px;  
+  height:70px;  
+  border:90px solid #000;
   border-radius:100%;  
-  background:#000;  
+  background:#eee;  
 }
-.bai{
+#taiji::before{
+  content:"";
   position:absolute;
-  width:250px;
-  height:250px;
-  background:#fff;
+  width:70px;
+  height:70px;
+  border:90px solid #eee;
+  background:#000;
   border-radius:100%;
   left:-125px;
 }
-.bai:after{
-  position:absolute;
-  content:'';
-  width:70px;
-  height:70px;
-  background:#000;
-  border-radius:100%;
-  top:83px;
-  left:83px;
-}
-.hei:after{
-  position:absolute;
-  content:'';
-  width:70px;
-  height:70px;
-  border-radius:100%;
-  background:#fff;
-  top:83px;
-  left:83px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
